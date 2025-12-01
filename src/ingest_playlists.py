@@ -2,13 +2,18 @@ from datetime import datetime, timezone
 import pandas as pd
 from .spotify_client import get_spotify_client
 
-# Will change the real ids
 PLAYLISTS = [
     {
-        "id": "GLOBAL_TOP_50_PLAYLIST_ID",
+        "id": "37i9dQZEVXbMDoHDwVN2tF?si=eeb9eadcf5a44868",  # Top 50 Global
         "region": "global",
         "playlist_type": "top50",
         "name": "Top 50 Global",
+    }
+    {
+        "id": "37i9dQZEVXbLiRSasKsNU9?si=f0943b991ae34e64",  # Viral 50 Global
+        "region": "global",
+        "playlist_type": "viral50",
+        "name": "Viral 50 Global",
     }
 ]
 
