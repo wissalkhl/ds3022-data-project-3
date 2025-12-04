@@ -111,40 +111,4 @@ A rough breakdown of the 50 points available in this project:
 ## Judging & Prizes 🏆
 After completion students and TAs will vote for their top 3 projects and there will be a prize for the top voted project in each section. (And I mean a _real_ prize.)
 
-# Spotify Global Song Trend Tracker — DS3022 Data Project 3
-## Team Members
-- Aileen
-- Wissal
-- Ruth
-
-## Overview
-We built a pipeline that collects snapshots of several Spotify playlists (Top 50 and Viral 50 across multiple regions) and enriches them with audio features from the Spotify Web API. The data is stored in DuckDB and analyzed to compare musical characteristics such as energy, danceability, valence, tempo, and explicitness across regions and playlist types.
-
-## Data Source
-We used the Spotify Web API to gather:
-- Track metadata (name, artists, album, duration, popularity, explicit flag)
-- Audio features (danceability, energy, valence, tempo, loudness, etc.)
-Playlists sampled include:
-- Top 50 Global
-- Viral 50 Global
-- Top 50 US
-- Top 50 UK
-- Top 50 Brazil
-- Top 50 India
-- 
-Each run of the pipeline creates a new snapshot.
-
-## Pipeline Summary
-- A Prefect flow fetches playlist tracks and audio features.
-- Flattened data is written into a DuckDB table.
-- Python scripts query DuckDB and generate visualizations for comparison.
-
-## Key Findings
-tbd...
-
-## How to Run
-1. Install dependencies with pip install -r requirements.txt.
-2. Add SPOTIFY_CLIENT_ID and SPOTIFY_CLIENT_SECRET to a .env file.
-3. Run python src/flows.py to collect data.
-4. Run python src/analysis.py to generate plots.
    
