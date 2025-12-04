@@ -1,7 +1,0 @@
-spotipy
-prefect
-python-dotenv
-pandas
-duckdb
-matplotlib
-seaborn
