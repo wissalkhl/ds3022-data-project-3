@@ -18,8 +18,8 @@ This figure is present in all the five libraries. It appears that the open-sourc
 
 ## Plot Visualization
 
-!(heatmap_matplotlib_2025.png)
-!(weekly_commits.png)
+![heatmap_matplotlib_2025.pmg](heatmap_matplotlib_2025.png)
+![weekly_commits.png](weekly_commits.png)
 
 
 ## GitHub Repo
