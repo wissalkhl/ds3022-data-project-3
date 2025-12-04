@@ -6,13 +6,11 @@
 
 ## Data Source
 
-What data source did you work with?
-
+For this project, we used the GitHub REST API to study the commit history of five major Python libraries, which are pandas, NumPy, scikit-learn, matplotlib, and PyTorch. The API gave us access to detailed commit metadata, including authors, timestamps, messages, and links back to each change. This API allowed us to pull several years of development activity across all five libraries.
 
 ## Challenges / Obstacles
 
-What challenges did this data choice present in data gathering, processing and analysis, and how did you work through them? What methods and tools did you use to work with this data?
-
+There's a limit for authenticated and unauthenticated pulls, so we had to work around that. GitHub returns data in pages of 100 items at a time, so it took a while for the data to loop through page after page to gather everything. To manage this, we built a pipeline that uses batching and a DuckDB database so the data would load cleanly and be analyzed quickly after collection.
 
 ## Analysis
 
